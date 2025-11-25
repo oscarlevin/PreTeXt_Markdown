@@ -310,7 +310,7 @@ outputtags["description"] = {begin_tag: "<description>", end_tag: "</description
          before_begin: "\n", after_begin: "",
          before_end: "", after_end: "\n"};
 
-outputtags["comment"] = {begin_tag: "<--", end_tag: "-->",  // should not be a special case?
+outputtags["comment"] = {begin_tag: "<!--", end_tag: "-->",  // should not be a special case?
          before_begin: "", after_begin: "",
          before_end: "", after_end: ""};
 

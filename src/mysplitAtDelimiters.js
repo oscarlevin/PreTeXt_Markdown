@@ -353,8 +353,6 @@ const preprocessAliases = function(this_content) {
     if (typeof this_content != "string") { alert("expected a string, but got:", this_content) }
     let the_text = this_content;
 
-    the_text = the_text.replace(/<!--.*?-->/g,"");
-
     for (let [key, value] of Object.entries(aliases)) {
       let trueName = key;
 // console.log("a key=trueName", key);
@@ -1040,7 +1038,7 @@ export const preprocess = function(just_text) {
     originaltextX = preprocessAliases(originaltextX);
 
    // XML comments (can these be something else, such as in Tikz?
-    originaltextX = originaltextX.replace(/<--/g, "\\begin{comment}");
+    originaltextX = originaltextX.replace(/<!--/g, "\\begin{comment}");
     originaltextX = originaltextX.replace(/-->/g, "\\end{comment}");
 
    // things like {equation*} -> {equation*}
