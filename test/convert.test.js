@@ -34,3 +34,10 @@ test("pure pretext", () => {
     console.log(converted);
     expect(converted).toMatchSnapshot();
 });
+
+// Self-closing tags work as expected.
+test("self-closing tags", () => {
+    const input = "This is a <pretext  /> tag";
+    const output = "\n<p>\nThis is a <pretext/> tag\n</p>\n";
+    expect(FlexTeXtConvert(input)).toBe(output);
+});

@@ -66,7 +66,7 @@ export const delimitersFromList = function(lis) {
         delim_lis.push( LaTeXDelimiterOf(el) );
     });
     return delim_lis
-}   
+}
 
 
 

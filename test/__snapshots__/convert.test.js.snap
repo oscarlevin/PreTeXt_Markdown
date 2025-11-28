@@ -625,20 +625,14 @@ A <term>term</term> is not to be confused with an <em>emphasized</em> word or <a
 `;
 
 exports[`pure pretext 1`] = `
-"
-
-<?xml version="1.0" encoding="UTF-8"?>
-
-
+"<?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="pure-pretext" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>The chapter title</title>
-
+<title>The chapter title</title>
 
 <introduction>
 
 <p>
-
             This is a sample chapter of pure <pretext/>. It is intended to be used as a test case for the conversion process.
 
             The content here is written in <pretext/> format, which is a subset of XML designed for educational documents.
@@ -651,17 +645,14 @@ exports[`pure pretext 1`] = `
 <title>The first section</title>
 
 <p>
-
             This is a paragraph that has <term>terms</term>, <em>emphasis</em>, <alert>alerts</alert>, and even some <c>code()</c> in it.
         
 </p>
 
 <p>
-
-            In <pretext /> you write math with <tag>m</tag> tags, like this: <m>\\sin(x) = \\cos(x + \\frac{\\pi}{2})</m>.  You can also write an math equation like this:
+            In <pretext/> you write math with <tag>m</tag> tags, like this: <m>\\sin(x) = \\cos(x + \\frac{\\pi}{2})</m>.  You can also write an math equation like this:
             
 <me>
-
                 f(x) = \\begin{cases}
                     x^2 \\amp \\text{if } x \\geq 0 \\\\
                     -x^2 \\amp \\text{if } x \\lt 0
@@ -671,8 +662,6 @@ exports[`pure pretext 1`] = `
 
 </p>
 </section>
-
-
 </chapter>
 "
 `;

@@ -39,7 +39,7 @@ export function fmToPTX(originaltext, wrapper="placeholder"){  // called by inde
 
 // names of these functions are confusing
     let originaltextB = extractStructure(originaltextA);
-
+      //console.log("originaltextB", originaltextB);
     let originaltextC = setCoarseStructure(originaltextB);
 
 //console.log("outputtags", outputtags);

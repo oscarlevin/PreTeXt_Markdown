@@ -1035,6 +1035,9 @@ export const preprocess = function(just_text) {
   // Is there any case where trailing spaces (before the \n) are meaningful?
     originaltextX = originaltextX.replace(/ +(\n|$)/g, "\n");
 
+    // Make self closing tags "tight"
+    originaltextX = originaltextX.replace(/\s*\/>/g, "/>");
+
     originaltextX = preprocessAliases(originaltextX);
 
    // XML comments (can these be something else, such as in Tikz?

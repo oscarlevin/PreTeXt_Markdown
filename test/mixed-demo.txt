@@ -266,7 +266,7 @@ The identity element of a group is unique.
 
 <proof>
 Suppose $e_1$ and $e_2$ are identity elements of a group $G$,
-and consider the expression $e_1 e_2$.  
+and consider the expression $e_1 e_2$.
 By the first part of the identity axiom we have
 $$\label{eqn:e_1 e_2 first part}
 e_1 e_2 = e_2,
@@ -314,7 +314,7 @@ $$
 
 \[
 align:
-   a&b 
+   a&b
 
    b&c
 t5
